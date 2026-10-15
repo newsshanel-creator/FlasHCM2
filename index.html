@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#08090b">
+<title>FlasH — CM Client Mobile Competitive</title><link rel="icon" href="assets/flash-mark.svg"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="FlasH home"><span class="brand-mark">ϟ</span><span>FlasH<small>CM CLIENT MOBILE</small></span></a>
+    <div class="side-scroll">
+      <div class="nav-label">PLATFORM</div>
+      <nav id="main-nav">
+        <a href="#home" data-route="home" class="nav-link active"><span>⌂</span>Home</a>
+        <a href="#play" data-route="play" class="nav-link"><span>◈</span>Play <em class="nav-tag">NEW</em></a>
+        <a href="#matches" data-route="matches" class="nav-link"><span>◉</span>Matches</a>
+        <a href="#tournaments" data-route="tournaments" class="nav-link"><span>♜</span>Tournaments</a>
+        <a href="#teams" data-route="teams" class="nav-link"><span>♧</span>Teams</a>
+        <a href="#leaderboard" data-route="leaderboard" class="nav-link"><span>▥</span>Leaderboard</a>
+        <a href="#stats" data-route="stats" class="nav-link"><span>⌁</span>Statistics</a>
+        <a href="#friends" data-route="friends" class="nav-link"><span>♙</span>Friends</a>
+      </nav>
+      <div class="nav-label nav-label-gap">DISCOVER</div>
+      <nav>
+        <a href="#news" data-route="news" class="nav-link"><span>▤</span>News</a>
+        <a href="#events" data-route="events" class="nav-link"><span>✦</span>Events</a>
+        <a href="#missions" data-route="missions" class="nav-link"><span>⚑</span>Missions</a>
+        <a href="#shop" data-route="shop" class="nav-link"><span>♢</span>Shop</a>
+      </nav>
+    </div>
+    <div class="premium-box"><div class="premium-icon">♛</div><b>FL ASH PREMIUM</b><p>Эксклюзивные награды, расширенная статистика и сезонные бонусы.</p><button class="btn btn-hot btn-small" data-route="shop">UPGRADE</button></div>
+    <div class="sidebar-bottom"><a href="#settings" data-route="settings" class="nav-link"><span>⚙</span>Settings</a><a href="#support" data-route="support" class="nav-link"><span>ⓘ</span>Support</a><div class="sidebar-version">FlasH Client <span>v1.0.7 demo</span></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar">
+      <button class="mobile-menu icon-btn" id="menu-toggle" aria-label="Открыть меню">☰</button>
+      <div class="breadcrumb"><span class="live-dot"></span> COMPETITIVE HUB <i>/</i> <strong id="page-crumb">HOME</strong></div>
+      <div class="top-actions"><label class="search-box"><span>⌕</span><input id="global-search" placeholder="Поиск игроков, команд..." aria-label="Поиск"><kbd>⌘ K</kbd></label><button class="icon-btn" id="notif-btn" aria-label="Уведомления">♧<span class="notification-dot"></span></button><button class="icon-btn" aria-label="Сообщения" id="message-btn">▤</button><button class="top-user" id="profile-menu"><img src="assets/profile-bg.jpg" alt=""/><span><b>Pashayev</b><small>LVL 07 · <i>1642 ELO</i></small></span><span class="chevron">⌄</span></button></div>
+    </header>
+    <div class="page-content" id="page-content" aria-live="polite"></div>
+    <footer class="footer"><span>ϟ FlasH <b>COMPETITIVE PLATFORM</b></span><span>CM CLIENT MOBILE · SEASON 01</span><span>DEMO BUILD <i>● ONLINE</i></span></footer>
+  </main>
+</div>
+<div class="toast-stack" id="toast-stack"></div>
+<div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Закрыть">×</button><div id="modal-body"></div></section></div>
+<script src="app.js"></script>
+</body></html>
